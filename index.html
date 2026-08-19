@@ -22,12 +22,18 @@ margin: 0 auto;
 padding: 16px;
 }
 
+article{
+    display: flex;
+}
+
 img{
 width: 500px;
 height: 300px;
-
 }
         
+.artigo-autor{
+    font-weight: bold;
+}
     </style>
 </head>
 <body>
@@ -39,11 +45,32 @@ height: 300px;
     <main>
         <img src="Gemini_Generated_Image_s9rtg3s9rtg3s9rt (1).png" alt="é a imagem de um logo referente ao colégio pinhalzinho, com elementos que se referema vida no campo, como lavoura e arvore">
         <h2>Minha primeira notícia</h2>
-        <p>Por: Alysson José Simões de Oliveira</p>
+        <p class="artigo-autor">Por: Alysson José Simões de Oliveira</p>
         <p>O colégio Rural Estadual de Pinhalzinho, fica em uma comunidade no interior de Rio Bonito do Iguaçu no Paraná. Entre os trabalhos desenvolvidos, destaca-se os indices alcançados nos últimos anos com IDEB, prova Paraná e também a aprovação de alunos formados em diversos vestibulares do Estado</p>
 
-    </main>
-    
+        <button>❤️<span>0</span></button>
+        <button><span>0</span></button>
+        <article>
+<img src="" alt="">
 
+<div>
+<h2>Meu Segundo Post</h2>
+<p class="artigo-autor">Por: Alysson José Simões de Oliveira</p>
+<p>Aqui vou dar dicas de estudo pra quem tá se preparando para vestibulares e Enem</p>
+
+</div>
+
+        </article>
+        <div>
+            <button>❤️<span>0</span></button>
+            <button><span>0</span></button>
+        </div>
+    </main>
 </body>
+
+
+<script>
+    const botoes = document.querySelector("button")
+    botoes.forEach(function(botao))
+</script>
 </html>
