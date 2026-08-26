@@ -49,9 +49,9 @@ height: 300px;
         <p>O colégio Rural Estadual de Pinhalzinho, fica em uma comunidade no interior de Rio Bonito do Iguaçu no Paraná. Entre os trabalhos desenvolvidos, destaca-se os indices alcançados nos últimos anos com IDEB, prova Paraná e também a aprovação de alunos formados em diversos vestibulares do Estado</p>
 
         <button>❤️<span>0</span></button>
-        <button><span>0</span></button>
+        <button>👍🏿<span>0</span></button>
         <article>
-<img src="" alt="">
+<img src="images.jpeg" alt="">
 
 <div>
 <h2>Meu Segundo Post</h2>
@@ -63,14 +63,30 @@ height: 300px;
         </article>
         <div>
             <button>❤️<span>0</span></button>
-            <button><span>0</span></button>
+            <button>👍🏿<span>0</span></button>
         </div>
     </main>
 </body>
 
 
 <script>
-    const botoes = document.querySelector("button")
-    botoes.forEach(function(botao))
+    const botoes = document.querySelector("button");
+    botoes.forEach(function(botao) {
+        let curtiu = false;
+        botao.addEventlistener("click", botaoClicado);
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelectorAll("span");
+            if (curtiu === false) {
+                texto.textContent++;
+                curtiu = true;
+            } else {
+                texto.textContent--;
+                curtiu = false;
+            }
+        }
+    })
+
+
 </script>
 </html>
